@@ -5,4 +5,19 @@ public class ejercicio6 {
         int[] primos = obtenerPrimerosPrimos(N);
         System.out.println(Arrays.toString(primos));
     }
+    public static int[] obtenerPrimerosPrimos(int N) {
+        int[] primos = new int[N];
+        int contador = 0;
+        int numero = 2;
+
+        while (contador < N) {
+            if (esPrimo(numero)) {
+                primos[contador] = numero;
+                contador++;
+            }
+            numero++;
+        }
+
+        return primos;
+    }
 }
