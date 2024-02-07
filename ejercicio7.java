@@ -14,5 +14,21 @@ public class ejercicio7 {
             }
         }
     }
-    
+    public static int[] obtenerFactoresPrimos(int numero) {
+        List<Integer> factoresPrimos = new ArrayList<>();
+
+        for (int i = 2; i <= numero; i++) {
+            while (numero % i == 0) {
+                factoresPrimos.add(i);
+                numero /= i;
+            }
+        }
+
+        int[] resultado = new int[factoresPrimos.size()];
+        for (int i = 0; i < factoresPrimos.size(); i++) {
+            resultado[i] = factoresPrimos.get(i);
+        }
+
+        return resultado;
+    }
 }
