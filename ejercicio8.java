@@ -48,4 +48,15 @@ public class ejercicio8 {
 
         return (double) suma / numeros.length;
     }
+    public static int calcularMinimo(int[] numeros) {
+        int minimo = numeros[0];
+
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] < minimo) {
+                minimo = numeros[i];
+            }
+        }
+
+        return minimo;
+    }
 }
