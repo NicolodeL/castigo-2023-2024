@@ -1,0 +1,2 @@
+public class ejercicio7 {
+}
