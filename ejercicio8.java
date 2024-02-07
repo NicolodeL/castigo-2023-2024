@@ -70,4 +70,10 @@ public class ejercicio8 {
 
         return maximo;
     }
+    private static int[] aumentarCapacidad(int[] array) {
+        int nuevaCapacidad = array.length * 2;
+        int[] newArray = new int[nuevaCapacidad];
+        System.arraycopy(array, 0, newArray, 0, array.length);
+        return newArray;
+    }
 }
