@@ -59,4 +59,15 @@ public class ejercicio8 {
 
         return minimo;
     }
+    public static int calcularMaximo(int[] numeros) {
+        int maximo = numeros[0];
+
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maximo) {
+                maximo = numeros[i];
+            }
+        }
+
+        return maximo;
+    }
 }
