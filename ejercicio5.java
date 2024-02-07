@@ -11,4 +11,15 @@ public class ejercicio5 {
             System.out.println();
         }
     }
+    public static int[][] generateMultiplicationTables(int N) {
+        int[][] tables = new int[N][10];
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < 10; j++) {
+                tables[i][j] = i * j;
+            }
+        }
+
+        return tables;
+    }
 }
