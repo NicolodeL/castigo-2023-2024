@@ -39,4 +39,13 @@ public class ejercicio8 {
 
         return resultado;
     }
+    public static double calcularMedia(int[] numeros) {
+        int suma = 0;
+
+        for (int numero : numeros) {
+            suma += numero;
+        }
+
+        return (double) suma / numeros.length;
+    }
 }
