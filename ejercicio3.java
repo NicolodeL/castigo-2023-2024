@@ -31,6 +31,6 @@ public class ejercicio3 {
             suma += valor;
         }
 
-        return suma;   
+        return suma;
     }
 }
