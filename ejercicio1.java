@@ -1,5 +1,8 @@
 public class ejercicio1 {
-    public static <String> void tiempo(String[] args) {
+    public static void main(String[] args) {
+        tiempo();
+    }
+    public static void tiempo() {
         int diasEnUnAnio = 365;
         byte horasEnUnDia = 24;
         byte minutosEnUnaHora = 60;
